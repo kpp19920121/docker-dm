@@ -14,7 +14,7 @@ db_init(){
   mkdir -p ${DM_DATA_DIR}
   chown -R dmdba ${DM_DATA_DIR}
   cd /home/dmdba/dmdbms/bin
-  ${DM_PATH}/bin/dminit PATH=/home/dmdba/data PAGE_SIZE=16
+  ${DM_PATH}/bin/dminit PATH=/home/dmdba/data PAGE_SIZE=16 CHARSET=1 LENGTH_IN_CHAR=1 CASE_SENSITIVE=0
 }
 
 check_is_init
