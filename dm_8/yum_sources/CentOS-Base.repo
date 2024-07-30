@@ -1,0 +1,26 @@
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://mirrors.aliyun.com/centos/7/os/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7
+
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=http://mirrors.aliyun.com/centos/7/updates/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7
+
+
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=http://mirrors.aliyun.com/centos/7/extras//$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7
+
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=http://mirrors.aliyun.com/centos/7/centosplus//$basearch/
+gpgcheck=1
+enabled=0
